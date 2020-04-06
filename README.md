@@ -163,6 +163,12 @@
 
 ##  Functions (Model)
 
+### getTotalChequeDetail(int customer_id)
+### addCheque(Cheque c)
+### getCheque(int cheque_id)
+### createCustomer(Customer cus)
+### setChequeStatus(int cheque_id)
+
 ### getTotalCustomers()
 
 - **Description** : `Look at the database and count all of the customer in it.`
