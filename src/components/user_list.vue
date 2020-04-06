@@ -19,8 +19,8 @@
       <tbody>
         <tr v-for="row in rows" :key="row">
           <td v-for="col in columns" :key="col">
-            <a v-if="col==='status'" :href="row[col]">Check</a>
-            <div v-else>{{row[col]}}</div>
+            <a v-if="col === 'status'" :href="row[col]">Check</a>
+            <div v-else>{{ row[col] }}</div>
           </td>
         </tr>
       </tbody>
@@ -31,7 +31,6 @@
 #say {
   font-family: "Nunito", sans-serif;
   font-size: 3rem;
-
   margin-left: 10%;
 }
 .v-btn {
@@ -79,39 +78,39 @@ export default {
         id: 1,
         type: "Bearer",
         date: "32-01-14",
-        status: "adsad"
+        status: "adsad",
       },
       {
         id: 2,
         type: "Order",
         date: "14-01-07",
-        status: "adsd"
+        status: "adsd",
       },
       {
         id: 3,
         type: "Order",
         date: "14-01-07",
-        status: "adsd"
+        status: "adsd",
       },
       {
         id: 4,
         type: "Order",
         date: "14-01-07",
-        status: "adsd"
+        status: "adsd",
       },
       {
         id: 5,
         type: "Order",
         date: "14-01-07",
-        status: "adsd"
+        status: "adsd",
       },
       {
         id: 6,
         type: "Bearer",
         date: "14-01-07",
-        status: "adsd"
-      }
-    ]
+        status: "adsd",
+      },
+    ],
   }),
   computed: {
     columns: function columns() {
@@ -119,7 +118,7 @@ export default {
         return [];
       }
       return Object.keys(this.rows[0]);
-    }
-  }
+    },
+  },
 };
 </script>

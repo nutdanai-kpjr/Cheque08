@@ -76,44 +76,44 @@ export default {
         user: "JoJo",
         type: "Bearer",
         date: "32-01-14",
-        verify: "adsad"
+        verify: "adsad",
       },
       {
         id: 2,
         user: "DoJo",
         type: "Order",
         date: "32-01-14",
-        verify: "adsad"
+        verify: "adsad",
       },
       {
         id: 3,
         user: "JoDo",
         type: "Order",
         date: "32-01-14",
-        verify: "adsad"
+        verify: "adsad",
       },
       {
         id: 4,
         user: "DoDo",
         type: "Order",
         date: "32-01-14",
-        verify: "adsad"
+        verify: "adsad",
       },
       {
         id: 5,
         user: "DoDo",
         type: "Order",
         date: "32-01-14",
-        verify: "adsad"
+        verify: "adsad",
       },
       {
         id: 6,
         user: "DoDo",
         type: "Order",
         date: "32-01-14",
-        verify: "adsad"
-      }
-    ]
+        verify: "adsad",
+      },
+    ],
   }),
   computed: {
     columns: function columns() {
@@ -121,7 +121,7 @@ export default {
       //   return [];
       // }
       return Object.keys(this.rows[0]);
-    }
-  }
+    },
+  },
 };
 </script>
