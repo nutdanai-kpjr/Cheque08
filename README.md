@@ -9,7 +9,7 @@
   > Listing all the submited cheque of current user including the button to check status for each cheque 
   > Also have a button to sumbit a cheque
   
- - `/cheque_status`
+- `/cheque_status`
   > the page use to show current check status : pending , success, fail .
  
 
@@ -22,7 +22,7 @@
   > List all the pending cheque that await for a staff to approve, including the button to approve status for each cheque 
 - `/cheque_verify` 
   > page for Staff to verify the cheque , by comparing the cheque info that user input in  and the cheque info on the cheque img that     user give 
- - `/cheque_approve` 
+- `/cheque_approve` 
   > page for staff to aprrove the cheque by compare the signature on database and signature on the cheque img .
 
 
