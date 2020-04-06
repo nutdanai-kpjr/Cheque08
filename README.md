@@ -28,10 +28,9 @@
 
 ## Backend (Servlet)
 
- ### Show number of customers
+ ### Show the list of the cheques that current user have sumbited
 
->  Get the number of customers of the bank
-
+>  Get the Array of the chequed that current user have upload
 - **URL** : `/api/customers`
 - **Method** : `GET`
 - **Auth required** : YES
@@ -163,23 +162,27 @@
 
 ##  Functions (Model)
 
-### getTotalChequeDetail(int customer_id)
+### getTotalCheque(int customer_id)
+
+- **Description** : `Using customer_id to search and return the Arrays of total cheques that customer submit`
+- **Package** : `model.QueryModel`
+
 ### addCheque(Cheque c)
-### getCheque(int cheque_id)
-### createCustomer(Customer cus)
-### setChequeStatus(int cheque_id)
 
-### getTotalCustomers()
-
-- **Description** : `Look at the database and count all of the customer in it.`
+- **Description** : `Create new cheque by using information from Cheque object`
 - **Package** : `model.QueryModel`
 
-### getCustomer(int customer_id)
+### getChequeDetail(int cheque_id)
 
-- **Description** : `Using customer_id to search and return the detail of that particular customer`
+- **Description** : ``Using cheque_id to search and return the Cheque object macthing that id``
 - **Package** : `model.QueryModel`
 
-### createCustomer(Customer cus)
+### setStatus(int cheque_id,String status)
 
-- **Description** : `Create new customer by using information from Customer object`
+- **Description** : `Set checque status of ihe input cheque_id  if the status change to success then call the transaction method to add money to user and remove money from payer (in approval process) ` 
 - **Package** : `model.QueryModel`
+
+
+
+
+
